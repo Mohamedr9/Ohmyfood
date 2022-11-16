@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet Openclassroom",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohamedr9/Ohmyfood.git"
+  },
+  "author": "Riri Mohamed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohamedr9/Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Mohamedr9/Ohmyfood#readme",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
+}
