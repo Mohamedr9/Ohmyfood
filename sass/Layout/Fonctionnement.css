@@ -1,0 +1,20 @@
+.fonction ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+@media (max-width: 800px) {
+  .fonction ol {
+    flex-direction: column;
+  }
+}
+.fonction li {
+  background-color: #f6f6f6;
+  padding: 1rem 2rem;
+  flex-grow: 1;
+  border-radius: 1rem;
+  box-shadow: 2px 1px 8px -3px black;
+}
+.fonction li:hover {
+  transform: scale(1.02);
+}/*# sourceMappingURL=Fonctionnement.css.map */
