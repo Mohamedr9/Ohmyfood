@@ -1,0 +1,58 @@
+@use "../utils/colors.scss";
+@use "../utils/mixins.scss";
+.menus {
+  background-color: #f6f6f6;
+  margin-bottom: 0rem;
+  padding: 0 4rem;
+
+  .menus_card {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
+    .new {
+      position: relative;
+    }
+
+    .new::before {
+      content: "nouveau";
+      position: absolute;
+      height: 2rem;
+      width: 5rem;
+      background-color: colors.$color-tertiary;
+      color: darken(colors.$color-tertiary, 50%);
+      display: grid;
+      place-items: center;
+      right: 1rem;
+      top: 1rem;
+    }
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 340px;
+    .card_image {
+      height: 15rem;
+      background-size: cover;
+      border-radius: 1rem 1rem 0 0;
+    }
+
+    @for $i from 1 through 4 {
+      &_image-#{$i} {
+        background-image: url("../../Assets/Menu-#{$i}.jpg");
+      }
+    }
+    &_description {
+      @include mixins.heart-animated;
+      h3,
+      p {
+        padding: 0.3rem;
+      }
+    }
+  }
+}

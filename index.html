@@ -1,38 +1,98 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>Oh My Food</title>
-    <script src="https://kit.fontawesome.com/3573ea04a3.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/3573ea04a3.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="loader">
+      
+    </div>
     <header>
       <h1>Ohmyfood</h1>
     </header>
+    <div class="city">
+      <i class="fa-solid fa-location-dot"></i>
+      <h2>Paris, Belleville</h2>
+    </div>
 
     <main>
-      <div class="city">
-        <i class="fa-solid fa-location-dot"></i>
-        <h2>Paris, Belleville</h2>
-      </div>
-
       <section class="explorer">
-    <h2>Réservez le menu qui vous convient</h2>
-    <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-    <button>Explorer nos restaurants</button>
+        <h2>Réservez le menu qui vous convient</h2>
+        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+        <button>Explorer nos restaurants</button>
       </section>
 
       <section class="fonction">
         <h2>Fonctionnement</h2>
         <ol>
-            <li><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</li>
-            <li><i class="fa-solid fa-list"></i>Composez votre menu</li>
-            <li><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
+          <li>
+            <i class="fa-solid fa-mobile-screen-button"></i>Choisissez un
+            restaurant
+          </li>
+          <li><i class="fa-solid fa-list"></i>Composez votre menu</li>
+          <li><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
         </ol>
       </section>
+
+      <section class="menus">
+        <h2>Restaurants</h2>
+        <div class="menus_card">
+          <a href="./pages/resto1.html" class="card new">
+            <div class="card_image card_image-1"></div>
+            <div class="card_description">
+              <h3>La palette du goût</h3>
+              <p>Ménilmontant</p>
+            </div>
+          </a>
+          <a href="./pages/resto2.html" class="card new">
+            <div class="card_image card_image-2"></div>
+            <div class="card_description">
+              <h3>La note enchantée</h3>
+              <p>Charonne</p>
+            </div>
+          </a>
+          <a href="./pages/resto3.html" class="card">
+            <div class="card_image card_image-3"></div>
+            <div class="card_description">
+              <h3>À la française</h3>
+              <p>Cité Rouge</p>
+            </div>
+          </a>
+          <a href="./pages/resto4.html" class="card">
+            <div class="card_image card_image-4"></div>
+            <div class="card_description">
+              <h3>Le délice des sens</h3>
+              <p>Folie-Méricourt</p>
+            </div>
+          </a>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <h2>ohmyfood</h2>
+      <p>
+        <i class="fa-solid fa-utensils"></i>
+        Proposer un restaurant
+      </p>
+      <p>
+        <i class="fa-solid fa-handshake-angle"></i>
+        Devenir partenaire
+      </p>
+      <p>Mention légales</p>
+      <a href="mailto:ririmohamed@outlook.fr">Contact</a>
+    </footer>
   </body>
 </html>
-

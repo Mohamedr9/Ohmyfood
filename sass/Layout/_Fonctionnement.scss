@@ -1,14 +1,17 @@
-@use "../utils/box-shadow.scss";
-@use "../utils/zoom.scss";
-@use "../utils/variable.scss";
-@use "../utils/colors.scss";
-
-
-
+@use "../utils/mixins.scss";
+@use "../utils/_variable.scss";
+@use "../utils/_colors.scss";
 
 .fonction {
-  counter-reset: steps ;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  counter-reset: steps;
+  margin-bottom: 2rem;
   & ol {
+    margin: 0;
+    padding: 5px;
     display: flex;
     gap: 2rem;
     @media (max-width: 1000px) {
@@ -22,9 +25,9 @@
     border-radius: 1rem;
     list-style-type: none;
     position: relative;
-    @include box-shadow.base-shadow;
+    @include mixins.base-shadow;
     &:hover {
-      @include zoom.zoom;
+      @include mixins.transform-zoom;
     }
     i.fa-solid {
       margin-right: 1rem;
@@ -42,9 +45,9 @@
       display: grid;
       place-items: center;
       position: absolute;
-      bottom: variable.$base-height;
+      top: 50%;
       left: -1 * variable.$base-height;
-  
+      transform: translateY(-50%);
     }
   }
 }
