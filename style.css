@@ -230,16 +230,16 @@ header {
   border-radius: 1rem 1rem 0 0;
 }
 .menus .card_image-1 {
-  background-image: url("../../Assets/Menu-1.jpg");
+  background-image: url("/Assets/Menu-1.jpg");
 }
 .menus .card_image-2 {
-  background-image: url("../../Assets/Menu-2.jpg");
+  background-image: url("/Assets/Menu-2.jpg");
 }
 .menus .card_image-3 {
-  background-image: url("../../Assets/Menu-3.jpg");
+  background-image: url("/Assets/Menu-3.jpg");
 }
 .menus .card_image-4 {
-  background-image: url("../../Assets/Menu-4.jpg");
+  background-image: url("/Assets/Menu-4.jpg");
 }
 .menus .card_description {
   position: relative;
