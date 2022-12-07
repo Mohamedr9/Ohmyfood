@@ -1,7 +1,7 @@
 ---
 # OhMyFood
 
-Voici mon projet Openclassrooms qui correspond au porjet 3 avec l'utilisation de SASS 
+Voici mon projet Openclassrooms qui correspond au projet 3 avec l'utilisation de SASS 
 
 ---
 
