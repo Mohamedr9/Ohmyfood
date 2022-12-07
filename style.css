@@ -12,12 +12,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-@media (min-width: 1000px) {
-  main {
-    padding: 0 1rem;
-  }
-}
-
 h2,
 h3,
 h4,
@@ -38,7 +32,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  background-color: #dfdfdf;
+  background-color: #EAEAEA;
   text-align: center;
   padding: 1.5rem;
 }
@@ -52,18 +46,20 @@ a {
   align-items: center;
   background-color: #f6f6f6;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
 }
 .explorer h2 {
   font-size: 2rem;
+  padding: 1.5rem;
 }
 .explorer p {
   font-size: 1rem;
+  padding: 1rem;
 }
 .explorer button {
   color: white;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 1rem 2rem;
   border: none;
   border-radius: 2rem;
@@ -127,18 +123,24 @@ a {
   }
 }
 .fonction {
-  padding: 0 1rem;
+  padding: 2rem 7rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   counter-reset: steps;
   margin-bottom: 2rem;
 }
+@media (max-width: 1000px) {
+  .fonction {
+    padding: 2rem 1rem;
+  }
+}
 .fonction ol {
   margin: 0;
   padding: 5px;
   display: flex;
   gap: 2rem;
+  margin-top: 3rem;
 }
 @media (max-width: 1000px) {
   .fonction ol {
@@ -146,6 +148,7 @@ a {
   }
 }
 .fonction li {
+  font-size: 0.9rem;
   background-color: #f6f6f6;
   padding: 1.5rem 2rem;
   flex-grow: 1;
@@ -156,6 +159,10 @@ a {
 }
 .fonction li:hover {
   scale: 1.02;
+  background-color: #F5EDFF;
+}
+.fonction li:hover i.fa-solid {
+  color: #9356dc;
 }
 .fonction li i.fa-solid {
   margin-right: 1rem;
@@ -190,13 +197,14 @@ header {
 .menus {
   background-color: #f6f6f6;
   margin-bottom: 0rem;
-  padding: 0 4rem;
+  padding: 3rem 1rem;
 }
 .menus .menus_card {
   display: flex;
   gap: 2rem;
   align-items: center;
   justify-content: space-between;
+  margin-top: 3rem;
 }
 @media (max-width: 1000px) {
   .menus .menus_card {
@@ -228,6 +236,7 @@ header {
   height: 15rem;
   background-size: cover;
   border-radius: 1rem 1rem 0 0;
+  box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
 .menus .card_image-1 {
   background-image: url("/Assets/Menu-1.jpg");
@@ -242,6 +251,7 @@ header {
   background-image: url("/Assets/Menu-4.jpg");
 }
 .menus .card_description {
+  box-shadow: 2px 1px 8px -3px #7e7e7e;
   position: relative;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
@@ -310,11 +320,35 @@ footer h2 {
   font-weight: 500;
   padding: 1rem 0;
 }
-footer p {
+footer .footer-element {
+  display: flex;
+  margin-right: 1rem;
+}
+footer .footer-element i {
+  margin-right: 0.4rem;
+}
+footer .footer-element p,
+footer .footer-element a {
   padding: 1rem;
 }
-footer a {
-  padding: 1.5rem;
+@media (max-width: 1000px) {
+  footer {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  footer .footer-element {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  footer .footer-element h2 {
+    padding: 1rem;
+  }
+  footer .footer-element p {
+    padding: 0.5rem;
+  }
+  footer .footer-element a {
+    padding: 0.5rem;
+  }
 }
 
 @-webkit-keyframes appear {
@@ -516,7 +550,7 @@ footer a {
   display: grid;
   place-items: center;
   background: white;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   width: 1.5rem;
   border-radius: 1rem;
   color: #99e2d0;
@@ -556,7 +590,7 @@ section.order {
 section.order button {
   color: white;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 1rem 2rem;
   border: none;
   border-radius: 2rem;

@@ -3,23 +3,28 @@
 @use "../utils/_colors.scss";
 
 .fonction {
-  padding: 0 1rem;
+  padding: 2rem 7rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   counter-reset: steps;
   margin-bottom: 2rem;
+  @media (max-width: 1000px) {
+    padding: 2rem 1rem;
+  }
   & ol {
     margin: 0;
     padding: 5px;
     display: flex;
     gap: 2rem;
+    margin-top: 3rem;
     @media (max-width: 1000px) {
       flex-direction: column;
     }
   }
   & li {
-    background-color: #f6f6f6;
+    font-size: 0.9rem;
+    background-color: colors.$lightergrey;
     padding: 1.5rem 2rem;
     flex-grow: 1;
     border-radius: 1rem;
@@ -28,11 +33,17 @@
     @include mixins.base-shadow;
     &:hover {
       @include mixins.transform-zoom;
+      background-color: #F5EDFF;
+      i.fa-solid{
+        color: colors.$purple;
+      }
     }
     i.fa-solid {
       margin-right: 1rem;
       color: colors.$lightgrey;
       font-size: 1.5rem;
+      
+     
     }
     &::before {
       counter-increment: steps;

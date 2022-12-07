@@ -1,15 +1,16 @@
 @use "../utils/colors.scss";
 @use "../utils/mixins.scss";
 .menus {
-  background-color: #f6f6f6;
+  background-color: colors.$lightergrey;
   margin-bottom: 0rem;
-  padding: 0 4rem;
+  padding: 3rem 1rem;
 
   .menus_card {
     display: flex;
     gap: 2rem;
     align-items: center;
     justify-content: space-between;
+    margin-top: 3rem;
     @media (max-width: 1000px) {
       flex-direction: column;
     }
@@ -40,6 +41,7 @@
       height: 15rem;
       background-size: cover;
       border-radius: 1rem 1rem 0 0;
+      @include mixins.base-shadow;
     }
 
     @for $i from 1 through 4 {
@@ -48,6 +50,7 @@
       }
     }
     &_description {
+      @include mixins.base-shadow;
       @include mixins.heart-animated;
       h3,
       p {
